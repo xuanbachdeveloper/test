@@ -1538,6 +1538,16 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@strikeentco/get@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@strikeentco/get/-/get-1.0.1.tgz#2188a0b00c0e2cb3bb6bdf25c400134c98619057"
+  integrity sha512-qPnoWkt7xxcOaUJhMveDHmj6INVKHXUEsPTGz3g4HC5XNnqRd1dDEFxL1KpG+vZ2VxmRK42EjBt5vUDr4uLzQQ==
+
+"@strikeentco/set@^1.0.0":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@strikeentco/set/-/set-1.0.2.tgz#cd657290ab86d4d7fd9b7c09b19c5eb4680954f0"
+  integrity sha512-jP/wGhBi70RoD2Ww2bd3Ay4nzKfyWSPL/sDgFaq2e/FXNC9a04R0M7fuDVHG/dG+WWNVj2pmE9exXn20a0AjGg==
+
 "@surma/rollup-plugin-off-main-thread@^1.1.1":
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/@surma/rollup-plugin-off-main-thread/-/rollup-plugin-off-main-thread-1.4.2.tgz#e6786b6af5799f82f7ab3a82e53f6182d2b91a58"
@@ -3307,6 +3317,11 @@ class-utils@^0.3.5:
     define-property "^0.2.5"
     isobject "^3.0.0"
     static-extend "^0.1.1"
+
+classnames@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
+  integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
 
 clean-css@^4.2.3:
   version "4.2.4"
@@ -8154,6 +8169,14 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha512-7EAHlyLHI56VEIdK57uwHdHKIaAGbnXPiw0yWbarQZOKaKpvUIgW0jWRVLiatnM+XXlSwsanIBH/hzGMJulMow==
 
+pick-deep@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/pick-deep/-/pick-deep-1.0.0.tgz#fdacd465d0ddfa23e10366f4afa61c3aa1d1d74e"
+  integrity sha512-Uy0VUtabou1sPl/vVClBFrWi4Ae/D3Vqu44FJawmm4lnduu5E16ykw8kh15fiUeLQ6lbmXQ0EMr3YIsqpLZl+A==
+  dependencies:
+    "@strikeentco/get" "^1.0.0"
+    "@strikeentco/set" "^1.0.0"
+
 picocolors@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-0.2.1.tgz#570670f793646851d1ba135996962abad587859f"
@@ -9209,6 +9232,13 @@ react-error-overlay@^6.0.9:
   version "6.0.11"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.11.tgz#92835de5841c5cf08ba00ddd2d677b6d17ff9adb"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
+
+react-filter-search@^1.1.11:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/react-filter-search/-/react-filter-search-1.1.11.tgz#b447e7f6ff8e9ccf36f68bbf1eccf26f06619776"
+  integrity sha512-zqOIvhpXg/VKHxgleSPGAfGjSnHg8jsbybHUAY4ao49yUreauYAc+vI34JXQYoNvC7/+rtOf95sk626jnVRCtQ==
+  dependencies:
+    pick-deep "^1.0.0"
 
 react-is@^16.13.1:
   version "16.13.1"
