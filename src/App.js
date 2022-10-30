@@ -11,21 +11,35 @@ function App() {
     setUsersList((prevUsersList) => {
       return [
         ...prevUsersList,
-        { name: uName, age: uAge, id: Math.random().toString() },
+        { name: uName, age: uAge, id: usersList.length + 1 },
       ];
     });
   };
+
+
+  const deleteUser = (id) => {
+    if (window.confirm('Are you sure delete this user?')) {
+      let newUsersList = usersList.filter( user => user.id !== id)
+    setUsersList(newUsersList);
+    }else{
+      return false;
+    }
+  }
+
   
   function sortByAge(usersList) {
     usersList.sort((a, b) => a.age - b.age);
   }
-
   sortByAge(usersList);
+
+  // function deleteUsers(usersList) {
+  //   usersList.
+  // }
 
   return (
     <div>
       <AddUser onAddUser={addUserHandler} />
-      <UsersList users={usersList} />
+      <UsersList deleteUser={deleteUser} users={usersList} />
     </div>
   );
 }
