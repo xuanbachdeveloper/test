@@ -36,9 +36,13 @@ const AddUser = (props) => {
     };
 
     //TODO: Create two function usernameChangeHandler and ageChangeHandler. These functions will take 'event' as parameter, and each will call setEnteredUserName and setEnteredAge respectively, setting the value for enteredAge and enteredUserName .
-    const usernameChangeHandler = (event) => {};
+    const usernameChangeHandler = (event) => {
+        setEnteredUsername(event.target.value);
+    };
 
-    const ageChangeHandler = (event) => {};
+    const ageChangeHandler = (event) => {
+        setEnteredAge(event.target.value)
+    };
 
     const errorHandler = () => {
         setError(null);
